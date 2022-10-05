@@ -1,0 +1,1 @@
+import{r,h as s}from"./p-82d65385.js";const t=class{constructor(s){r(this,s)}render(){return s("p",null,"My name is Stencil")}};t.style="";export{t as my_card}

@@ -1,0 +1,46 @@
+Steps to be followed for deployment
+
+Exporting stencil to npmjs
+=>In package json give unique file name and version
+1 register for npmjs
+2 npm start
+3 (close running file) npm run build
+4 npm login
+5 npm publish
+=> search package name at npmjs.com
+
+==================================================
+Reuse stencil at React
+create react app and deploy this
+
+1. npx create-react-app react-demo
+2. npm start
+3. install your stencil project use npmjs install cmd
+     command (ex: npm i stencil-demo-coding-locker)
+
+4. In index.js file
+import { defineCustomElements } from "stencil-demo-coding-locker/loader";
+    (stencil-demo-coding-locker=> name of stencil)
+reportWebVitals();
+defineCustomElements(window);
+
+5. add html tags of web components
+
+5. restart project
+
+=====================================================
+
+stencil in angular
+1. ng new angular-demo
+2. install your stencil project use npmjs install cmd
+     command (ex: npm i stencil-demo-coding-locker)
+3. add app.module.ts
+    import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+4. main.ts
+    import{ defineCustomElements } from 'stencil-demo-coding-locker/loader';
+      defineCustomElements(window);
+5. Add web comp tags at html 
+6. ng serve

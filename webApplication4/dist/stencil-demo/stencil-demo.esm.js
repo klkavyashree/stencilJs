@@ -1,0 +1,1 @@
+import{p as r,b as p}from"./p-82d65385.js";(()=>{const p=import.meta.url,m={};return""!==p&&(m.resourcesUrl=new URL(".",p).href),r(m)})().then((r=>p([["p-7e549425",[[1,"my-card"]]]],r)));
